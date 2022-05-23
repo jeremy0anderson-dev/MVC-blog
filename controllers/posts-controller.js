@@ -18,7 +18,6 @@ const postEvents = {
         Post.findAll({})
             .then(postData => {
             let posts = postData.map(({post_id, post_url, title, created_at, user_id})=>{
-
                return  {
                     id: post_id,
                     title: title,
@@ -26,7 +25,7 @@ const postEvents = {
                     user_id: user_id,
                     created_at: created_at
             }});
-            res.status(200).render('home',{
+            res.render('home',{
                 layout: "default",
                 posts: posts
             })
