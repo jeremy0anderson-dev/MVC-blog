@@ -1,0 +1,14 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    padding: 10px;
+    margin: 0;
+}
+.navbar-link{
+    text-decoration: none;
+    font-size: medium;
+}
+.navbar-section{
+    padding:10px;
+}

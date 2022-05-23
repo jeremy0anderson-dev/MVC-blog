@@ -21,7 +21,9 @@ app.set('view engine', 'hbs');
 // Middleware
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
+app.use(express.static('./public'));
 
+app.use(require('./routes'));
 //configure session
 app.use(session({
     name:"sid",

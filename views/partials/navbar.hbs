@@ -1,0 +1,17 @@
+<div class="navbar-container">
+    <div class="navbar">
+        <section class="navbar-section left">
+            <h1>Tech Blog</h1>
+        </section>
+        <section class="navbar-section right">
+            <a class="navbar-link" href="/dashboard">Dashboard</a>
+            <a class="navbar-link" href="/">Home</a>
+            {{#if logout}}
+                <a class="navbar-link" href="/logout">{{logout}}</a>
+            {{else}}
+                <a class="navbar-link" href="/login">{{signin}}</a>
+                <a class="navbar-link" href="register">{{signup}}</a>
+            {{/if}}
+        </section>
+    </div>
+</div>
