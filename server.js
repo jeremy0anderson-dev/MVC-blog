@@ -11,7 +11,8 @@ const sequelize = require('./config'),
 
 app.engine("hbs", exphbs.engine({
     extname: 'hbs',
-    defaultLayout: "default"
+    defaultLayout: "default",
+    // helpers: require('./utils/helpers')
 }))
 app.set('views', './views');
 app.set('view engine', 'hbs');

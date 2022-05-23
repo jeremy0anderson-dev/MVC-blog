@@ -1,12 +1,7 @@
 const router = require('express').Router();
-
-router.get('/', (req, res)=>{
-    res.render('home', {
-        layout: "default",
-        logout: "Log Out"
-    })
-
-})
+const {postEvents, userEvents} = require('../../controllers');
+router.route('/')
+    .get(postEvents.getAllPosts);
 
 
 module.exports = router;
