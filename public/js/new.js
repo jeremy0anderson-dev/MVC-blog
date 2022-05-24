@@ -14,7 +14,9 @@ const newFormHandler = async function(event) {
       postContent,
     }),
     headers: { 'Content-Type': 'application/json' },
-  });
+  }).then(()=>{
+    document.location.replace('/dashboard');
+  })
 
 };
 

@@ -14,6 +14,9 @@ console.log(posts);
     res.render('all-posts', {
       layout: 'dashboard',
       posts,
+      user:{
+        username: req.session.username
+      }
     });
   } catch (err) {
     res.redirect('login');
