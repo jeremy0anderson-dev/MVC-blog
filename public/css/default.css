@@ -12,3 +12,12 @@
 .navbar-section{
     padding:10px;
 }
+.login-form, .signup-form{
+    margin: 10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.login-form div label input, .signup-form div label input{
+    padding: 10px;
+}

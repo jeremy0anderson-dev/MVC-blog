@@ -1,5 +1,11 @@
-const userEvents = require('./users-controller');
-const postEvents = require('./posts-controller');
-const commentEvents = require('./comments-controller');
+const router = require('express').Router();
 
-module.exports = {userEvents, postEvents, commentEvents}
+const apiRoutes = require('./api');
+const homeRoutes = require('./home-routes.js');
+const dashboardRoutes = require('./dashboard-routes.js');
+
+router.use('/', homeRoutes);
+router.use('/dashboard', dashboardRoutes);
+router.use('/api', apiRoutes);
+
+module.exports = router;
