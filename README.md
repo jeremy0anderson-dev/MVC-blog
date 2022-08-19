@@ -1,1 +1,1 @@
-# MERN-stack-blog
+# Model View Controller Blog
